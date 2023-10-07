@@ -21,9 +21,8 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand me-auto" href="./index.html"
-          >Forest Fire Prediction</a
-        >
+        <!-- <a class="navbar-brand" href="./index.html">Forest Fire Prediction</a> -->
+        <img src="./logo.png" alt="DeFire">
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -34,7 +33,27 @@
       </div>
     </nav>
 
-    <div id="map"></div>
+    <div class="map-container">
+        <div id="map"></div>
+        <div class="map-text">
+            <h2>Introducing DeFire</h2>
+            <ul id="defire-intro">
+                <li>Timely wildfire notifications </li>
+                <li>Detailed visualizations of current and potential wildfires across the globe</li>
+                <li>User-friendly interfaces for the public and professionals</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>&copy; 2023 DeFire Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Include Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>

@@ -1,39 +1,105 @@
-/* Adjust styles for the map */
+/* Reset margins and padding for HTML and body */
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the height of the map to 100% viewport height */
 #map {
-    height: 500px;
-    margin-top: 20px; /* Add margin to separate it from the navbar */
+  height: 79.9vh;
 }
 
-/* Adjust styles for the navbar */
+/* Add styles for the navbar */
 .navbar {
-    background-color: #333; /* Background color for the navbar */
-    /* padding: 10px; */
+  background-color: #333; /* Background color for the navbar */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Adjust the padding as needed */
+  margin: 0; /* Remove any margin */
 }
 
-.navbar a.navbar-brand {
-    color: #fff; /* Text color for the brand */
-    font-weight: bold; /* Make the brand text bold */
-    font-size: 24px; /* Adjust the font size as needed */
-    text-decoration: none; /* Remove underlines from the brand */
+.navbar img {
+  height: 10%;
+  width: 10%;
 }
 
-.navbar ul.navbar-nav {
-    list-style-type: none; /* Remove bullet points from the list */
-    margin: 0; /* Remove default margin */
+.navbar ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  text-align: center; /* Center-align the list items */
+  margin-left: 80%;
 }
 
-.navbar li.nav-item {
-    display: inline-block; /* Display list items horizontally */
-    margin-left: 20px; /* Add space between list items */
+.navbar li {
+  display: inline; /* Display list items horizontally */
+  margin-right: 20px; /* Add space between list items */
 }
 
-.navbar a.nav-link {
-    text-decoration: none; /* Remove underlines from links */
-    color: #fff; /* Link text color */
-    font-weight: bold; /* Make the links bold */
+.navbar a {
+  text-decoration: none; /* Remove underlines from links */
+  color: #fff; /* Link text color */
+  font-weight: bold; /* Make the links bold */
 }
 
 /* Add a hover effect for the links */
-.navbar a.nav-link:hover {
-    color: #ff6600; /* Change the link color on hover */
+.navbar a:hover {
+  color: #ff6600; /* Change the link color on hover */
+}
+
+.map-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 2.3%;
+}
+
+#map {
+  width: 70vh; /* Adjust the map width as needed */
+  height: 70vh; /* Adjust the map height as needed */
+  border: 2px solid #333; /* Add a border to the map */
+  margin-right: 21%;
+  margin-bottom: 0.27%;
+  margin-left: 7%;
+}
+
+#defire-intro {
+  padding-right: 10%;
+  font-size: larger;
+  text-align: left;
+}
+
+.map-text {
+  margin-top: 20px;
+}
+
+.map-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.map-text p {
+  font-size: 16px;
+}
+
+/* Styling for the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  margin: 0; /* Remove any margin */
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ff6600;
 }
