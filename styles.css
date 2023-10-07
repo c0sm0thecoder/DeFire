@@ -1,0 +1,39 @@
+/* Adjust styles for the map */
+#map {
+    height: 500px;
+    margin-top: 20px; /* Add margin to separate it from the navbar */
+}
+
+/* Adjust styles for the navbar */
+.navbar {
+    background-color: #333; /* Background color for the navbar */
+    /* padding: 10px; */
+}
+
+.navbar a.navbar-brand {
+    color: #fff; /* Text color for the brand */
+    font-weight: bold; /* Make the brand text bold */
+    font-size: 24px; /* Adjust the font size as needed */
+    text-decoration: none; /* Remove underlines from the brand */
+}
+
+.navbar ul.navbar-nav {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar li.nav-item {
+    display: inline-block; /* Display list items horizontally */
+    margin-left: 20px; /* Add space between list items */
+}
+
+.navbar a.nav-link {
+    text-decoration: none; /* Remove underlines from links */
+    color: #fff; /* Link text color */
+    font-weight: bold; /* Make the links bold */
+}
+
+/* Add a hover effect for the links */
+.navbar a.nav-link:hover {
+    color: #ff6600; /* Change the link color on hover */
+}
