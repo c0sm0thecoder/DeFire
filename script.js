@@ -46,34 +46,73 @@ function getMarkerIcon(value) {
 }
 
 function displayPredictions() {
-  var Trabzon = new Forest(38.6742, 29.4059, 50, "High Risk", 80); // Trabzon
-  var Kahramanmarash = new Forest(41.1956, 32.6227, "Low Risk", 30); // Kahramanmarash
-  var Isparta = new Forest(37.7819, 30.5665, "Medium Risk", 56); // Isparta
+    var Usak = new Forest(38.7742, 29.4059, 50, "High Risk", 80); // Usak
+    var Kahramanmarash = new Forest(41.1956, 32.6227, "Low Risk", 30); // Kahramanmarash
+    var Isparta = new Forest(37.7419, 30.5665, "Medium Risk", 56); // Isparta
+    var Istanbul = new Forest(41.15082, 28.9784, "Low Risk", 15); // Istanbul
+    var Antalya = new Forest(36.8969, 30.5133, "Medium Risk", 45); // Antalya
+    var Ankara = new Forest(39.8334, 32.8597, "Low Risk", 20); // Ankara
+    var Bursa = new Forest(40.1724, 29.0570, "Medium Risk", 50); // Bursa
+    var Adana = new Forest(37.1004, 35.3893, "Low Risk", 35); // Adana
+    var Izmir = new Forest(38.4237, 27.2928, "Low Risk", 15); // Izmir
+    var Mersin = new Forest(36.7959, 34.3179, "Low Risk", 25); // Mersin
 
-  var TrabzonIcon = getMarkerIcon(Trabzon.value);
-  var KahramanmarashIcon = getMarkerIcon(Kahramanmarash.value);
-  var IspartaIcon = getMarkerIcon(Isparta.value);
+    var UsakIcon = getMarkerIcon(Usak.value);
+    var KahramanmarashIcon = getMarkerIcon(Kahramanmarash.value);
+    var IspartaIcon = getMarkerIcon(Isparta.value);
+    var IstanbulIcon = getMarkerIcon(Istanbul.value);
+    var AntalyaIcon = getMarkerIcon(Antalya.value);
+    var AnkaraIcon = getMarkerIcon(Ankara.value);
+    var BursaIcon = getMarkerIcon(Bursa.value);
+    var AdanaIcon = getMarkerIcon(Adana.value);
+    var IzmirIcon = getMarkerIcon(Izmir.value);
+    var MersinIcon = getMarkerIcon(Mersin.value);
 
-  var TrabzonMarker = L.marker([Trabzon.lat, Trabzon.lng], {
-    icon: TrabzonIcon,
+  var UsakMarker = L.marker([Usak.lat, Usak.lng], {
+    icon: UsakIcon,
   }).addTo(map);
+
   var KahramanmarashMarker = L.marker(
     [Kahramanmarash.lat, Kahramanmarash.lng],
     { icon: KahramanmarashIcon }
   ).addTo(map);
-  var Isparta3 = L.marker([Isparta.lat, Isparta.lng], {
+  var IspartaMarker = L.marker([Isparta.lat, Isparta.lng], {
     icon: IspartaIcon,
   }).addTo(map);
+  var IstanbulMarker = L.marker([Istanbul.lat, Istanbul.lng], {
+    icon: IstanbulIcon,
+  }).addTo(map);
+  var AntalyaMarker = L.marker([Antalya.lat, Antalya.lng], {
+    icon: AntalyaIcon,
+  }).addTo(map);
+  var AnkaraMarker = L.marker([Ankara.lat, Ankara.lng], {
+    icon: AnkaraIcon,
+  }).addTo(map);
+  var BursaMarker = L.marker([Bursa.lat, Bursa.lng], {
+    icon: BursaIcon,
+  }).addTo(map);
+  var AdanaMarker = L.marker([Adana.lat, Adana.lng], {
+    icon: AdanaIcon,
+  }).addTo(map);
+  var IzmirMarker = L.marker([Izmir.lat, Izmir.lng], {
+    icon: IzmirIcon,
+  }).addTo(map);
+  var MersinMarker = L.marker([Mersin.lat, Mersin.lng], {
+    icon: MersinIcon,
+  }).addTo(map);
 
-  TrabzonMarker.bindPopup(
-    `Region: Trabzon , Value: ${Trabzon.value}%`
-  ).openPopup();
-  KahramanmarashMarker.bindPopup(
-    `Region: Kahramanmarash , Value: ${Kahramanmarash.value}%`
-  ).openPopup();
-  Isparta3.bindPopup(
-    `Region: Isparta , Value: ${Isparta.value}%`
-  ).openPopup();
+    UsakMarker.bindPopup(`Region: Usak , Value: ${Usak.value}%`).openPopup();
+    KahramanmarashMarker.bindPopup(`Region: Kahramanmarash , Value: ${Kahramanmarash.value}%`).openPopup();
+    IspartaMarker.bindPopup(`Region: Isparta , Value: ${Isparta.value}%`).openPopup();
+
+    IstanbulMarker.bindPopup(`Region: Istanbul , Value: ${Istanbul.value}%`).openPopup();
+    AntalyaMarker.bindPopup(`Region: Antalya , Value: ${Antalya.value}%`).openPopup();
+    AnkaraMarker.bindPopup(`Region: Ankara , Value: ${Ankara.value}%`).openPopup();
+    BursaMarker.bindPopup(`Region: Bursa , Value: ${Bursa.value}%`).openPopup();
+    AdanaMarker.bindPopup(`Region: Adana , Value: ${Adana.value}%`).openPopup();
+    IzmirMarker.bindPopup(`Region: Izmir , Value: ${Izmir.value}%`).openPopup();
+    MersinMarker.bindPopup(`Region: Mersin , Value: ${Mersin.value}%`).openPopup();
+
 }
 
 var customMarkerStyles = `
