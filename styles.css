@@ -58,9 +58,9 @@ body {
   width: 140vh; /* Adjust the map width as needed */
   height: 70vh; /* Adjust the map height as needed */
   border: 2px solid #333; /* Add a border to the map */
-  margin-right: 21%;
+  margin-right: 5%;
   margin-bottom: 0.27%;
-  margin-left: 7%;
+  margin-left: 2%;
 }
 
 #defire-intro {
