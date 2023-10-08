@@ -66,13 +66,13 @@ function displayPredictions() {
   }).addTo(map);
 
   TrabzonMarker.bindPopup(
-    `Region: TrabzonPrediction: ${Trabzon.prediction}Value: ${Trabzon.value}`
+    `Region: Trabzon , Value: ${Trabzon.value}%`
   ).openPopup();
   KahramanmarashMarker.bindPopup(
-    `Region: KahramanmarashPrediction: ${Kahramanmarash.prediction}Value: ${Kahramanmarash.value}`
+    `Region: Kahramanmarash , Value: ${Kahramanmarash.value}%`
   ).openPopup();
   Isparta3.bindPopup(
-    `Region: IspartaPrediction: ${Isparta.prediction}Value: ${Isparta.value}`
+    `Region: Isparta , Value: ${Isparta.value}%`
   ).openPopup();
 }
 
